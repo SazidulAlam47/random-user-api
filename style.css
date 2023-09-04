@@ -1,0 +1,134 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply some basic styling to the page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+/* Styling for the header section */
+.headder {
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center-align text */
+  }
+  
+  .headder h1 {
+    font-size: 2rem; /* Font size for the heading */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .headder #submit-form {
+    margin-top: 20px; /* Space between heading and form */
+  }
+  
+  .headder input[type="text"] {
+    width: 300px; /* Width of the input field */
+    padding: 10px; /* Padding inside the input field */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add a slight border-radius */
+    margin-right: 10px; /* Space between input field and submit button */
+  }
+  
+  .headder input[type="submit"] {
+    background-color: #007bff; /* Background color for the submit button */
+    color: #fff; /* Text color for the submit button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add a slight border-radius */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: 0.5s;
+  }
+  
+  /* Style the submit button on hover */
+  .headder input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+}
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    transition: transform 0.3s ease-in-out;
+  }
+  .card:first-child{
+    min-width: 300px;
+  }
+  
+  .card:hover {
+    transform: scale(1.03); /* Add a subtle hover effect */
+  }
+  
+  .user-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  h2 + p{
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* Modern style for the card content */
+  .card .user-info {
+    padding-top: 20px;
+  }
+  
+  .card .user-info p {
+    font-size: 0.9rem;
+    color: #3f3f3f;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+  @media (max-width: 455px){
+    .headder input[type="text"]{
+      margin: auto;
+    }
+    .headder input[type="submit"]{
+      margin-top: 10px;
+    }
+  }
